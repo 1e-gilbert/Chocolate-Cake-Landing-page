@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Chocolate Cake</title>
+
+    <style>
+        .container {
+            max-width:800px;
+            margin: 20px auto;
+            padding: 30px 60px;
+            border-radius: 10px;
+            border: 1px solid #F5F5DC;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            background: #F5F5DC;
+            margin-top: 50px; 
+            margin-bottom: 50px; 
+        }
+
+        h1 {
+            color: #4E342E;
+            background: linear-gradient(to right, #4E342E, #F5F5DC);
+            text-align: center;
+        }
+
+        h2 {
+            color: #B97410;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        h3 {
+            color: #B97410;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        button {
+            margin: 0px auto;
+            display: block;
+            color: #FFC107;
+            padding: 15px 20px;
+            font-size: 16px;
+            background: #671111;
+            border: 1px solid #FFC107;
+            border-radius: 30px;
+            transition: all 200ms ease-in-out;
+            box-shadow: 5px 5px 10px #f1dfc3;
+        }
+
+        button:hover {
+            background: white;
+            color: #671111;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #990a0a;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.8;
+            margin: 20px;
+        }
+
+        .details {
+            font-size: 18px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        #reason {
+            color: #B97410;
+            font-size: 22px;
+        }
+
+        ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 15px; 
+}
+
+.footer {
+        margin: 30px;
+        text-align: center;
+        font-size:18px;
+      }
+
+.highlight{
+        color: #B97410;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1>Chocolate Cake</h1>
+    <h2>
+        <em>Nothing beats a moist chocolate cake on a rainy day!</em>
+    </h2>
+
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/960/original/best-moist-chocolate-cake-1.jpg?1725362646"
+        alt="chocolate cake" />
+    <div class="details">
+        <p>
+            <strong id="reason">Some reasons why chocolate cake is the best:</strong>
+        <ol>
+            <li>
+                <strong>Rich Flavor:</strong> The deep, rich taste of chocolate is universally loved, making every bite
+                of chocolate cake indulgent and satisfying.
+            </li>
+            <br>
+            <li>
+                <strong>Versatility:</strong> Chocolate cake can be paired with a variety of fillings, toppings, and
+                frostings, like fruit, nuts, or cream, making it adaptable to many preferences.
+            </li>
+            <br>
+            <li>
+                <strong>Comfort Food:</strong> It’s a classic dessert that brings comfort and joy, often associated with
+                celebrations, making it a go-to for special occasions.
+            </li>
+            <br>
+            <li>
+                <strong>Mood Booster:</strong> Chocolate contains compounds that can boost mood, making chocolate cake
+                not just delicious, but also a sweet way to feel better.
+            </li>
+            <br>
+            <li>
+                <strong>Global Appeal:</strong> Loved by people all around the world, chocolate cake has a universal
+                appeal that transcends cultures.
+            </li>
+        </ol>
+        <h3>All About Chocolate Cake</h3>
+        <strong>Chocolate cake</strong> or <strong>chocolate gâteau</strong> is a cake flavored with melted chocolate, cocoa powder, or
+        both. It can also have other ingredients such as <em>fudge, vanilla crème, and other sweeteners.</em> The
+        history of chocolate cake goes back to the 17th century when cocoa powder from the Americas was added to
+        traditional cake recipes.
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Chocolate_cake" target="_blank">Read more on Wikipedia</a>
+        </p>
+    </div>
+<hr>
+<br>
+    <button class="buyButton">Order Now</button>
+    <div class="footer">
+    This page was built by <span style="color: #B97410;">Danielle Agboka.</span>
+    Email: <span class="highlight">danielleagboka@gmail.com</span>
+    </div>
+</div>
+</body>
+
+<script>
+    // Function to prompt the user for their name and email
+        function buy() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your Email address?");
+            if (name.length > 0 && email.length >0) 
+            {
+            alert("Thanks, " + name + "! Your virtual cake order is on the way to " + email + ". Just don't eat it all at once! 🍫🎂");
+        }
+        else {
+            alert("Error: Write your name and email address!" );
+            }
+        }
+            // Display an alert to confirm their input
+        // Adding the event listener to the button
+        document.querySelector(".buyButton").addEventListener("click", buy);
+</script>
+</body>
+
+</html>
